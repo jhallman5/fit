@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import Nav from './src/views/nav'
 
 const styles = {
   app: {
@@ -11,8 +12,11 @@ const styles = {
 class App extends Component {
   render() {
     return (
-      <div style={styles.app}>
-        Welcome to React!
+      <div>
+        <div style={styles.app}>
+          Welcome to React!
+        </div>
+        <Nav></Nav>
       </div>
     )
   }

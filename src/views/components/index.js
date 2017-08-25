@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import Nav from './src/views/nav'
+import { Provider } from 'react-redux'
+
+import Nav from './nav'
+import store from "../store"
 
 const styles = {
   app: {
@@ -23,4 +26,7 @@ class App extends Component {
 }
 
 const root = document.querySelector('#app')
-ReactDOM.render(<App />, root)
+
+ReactDOM.render(<Provider store={store}>
+    <App />
+  </Provider>, root)

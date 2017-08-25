@@ -15,11 +15,11 @@ const styles = {
 class App extends Component {
   render() {
     return (
-      <div>
+      <div> 
+        <Nav />
         <div style={styles.app}>
           Welcome to React!
         </div>
-        <Nav></Nav>
       </div>
     )
   }
